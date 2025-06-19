@@ -57,9 +57,9 @@
             });
         }
 
-        let ws = new WebSocket("ws://54.242.215.143:6001/app/localkey?protocol=7&client=js&version=7.2.0&flash=false");
-        ws.onmessage = (e) => console.log("message", e);
-        ws.onerror = (e) => console.log("WebSocket error", e);
+        // let ws = new WebSocket("ws://54.242.215.143:6001/app/localkey?protocol=7&client=js&version=7.2.0&flash=false");
+        // ws.onmessage = (e) => console.log("message", e);
+        // ws.onerror = (e) => console.log("WebSocket error", e);
     </script>
 </body>
 </html>
