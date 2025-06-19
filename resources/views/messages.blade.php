@@ -30,7 +30,7 @@
         window.Echo = new Echo({
             broadcaster: 'pusher',
             key: "localkey",
-            wsHost: "{{ config('broadcasting.connections.pusher.options.host', request()->getHost()) }}",
+            wsHost: "192.168.10.10",
             wsPort: "{{ config('broadcasting.connections.pusher.options.port', 6001) }}",
             forceTLS: false,
             disableStats: true,
