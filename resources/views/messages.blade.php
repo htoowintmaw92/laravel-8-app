@@ -36,7 +36,7 @@
             wssPort: "{{ config('broadcasting.connections.pusher.options.port', 6001) }}",
             forceTLS: true,
             disableStats: true,
-            enabledTransports: ['ws', 'wss']
+            enabledTransports: ['ws']
         });
 
         window.Echo.channel('messages')
