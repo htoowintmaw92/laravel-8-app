@@ -32,7 +32,6 @@
             key: "{{ config('broadcasting.connections.pusher.key') }}",
             cluster: 'mt1', // required by Echo even for local
             wsHost: window.location.hostname,
-            wsPath: '/app',
             wsPort: "{{ config('broadcasting.connections.pusher.options.port', 6001) }}",
             wssPort: "{{ config('broadcasting.connections.pusher.options.port', 6001) }}",
             forceTLS: true,
