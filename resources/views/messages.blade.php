@@ -32,9 +32,10 @@
             key: "{{ config('broadcasting.connections.pusher.key') }}",
             cluster: 'mt1', // required by Echo even for local
             // wsHost: window.location.hostname,
+            // wsHost: "{{ config('broadcasting.connections.pusher.options.host', request()->getHost()) }}",
             wsHost: "{{ config('broadcasting.connections.pusher.options.host', request()->getHost()) }}",
             wsPort: 6001,
-            wssPort: "{{ config('broadcasting.connections.pusher.options.port', 6001) }}",
+            wssPort: 443,
             forceTLS: true,
             disableStats: true,
             enabledTransports: ['ws', 'wss']
