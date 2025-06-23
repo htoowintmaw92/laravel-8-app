@@ -33,7 +33,7 @@
             cluster: 'mt1', // required by Echo even for local
             // wsHost: window.location.hostname,
             wsHost: "{{ config('broadcasting.connections.pusher.options.host', request()->getHost()) }}",
-            wsPort: "{{ config('broadcasting.connections.pusher.options.port', 6001) }}",
+            wsPort: 6001,
             wssPort: "{{ config('broadcasting.connections.pusher.options.port', 6001) }}",
             forceTLS: true,
             disableStats: true,
