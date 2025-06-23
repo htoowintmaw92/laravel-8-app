@@ -44,10 +44,6 @@ return [
                 'host' => env('PUSHER_APP_HOST', '127.0.0.1'),
                 'port' => env('PUSHER_APP_PORT', 6001),
                 'scheme' => env('PUSHER_APP_SCHEME', 'http'),
-                // 'curl_options' => [
-                //     CURLOPT_SSL_VERIFYHOST => 0,
-                //     CURLOPT_SSL_VERIFYPEER => 0,
-                // ],
             ],
         ],
 
