@@ -38,7 +38,7 @@
             wssPort: 443,
             forceTLS: false,
             disableStats: true,
-            enabledTransports: ['ws', 'wss']
+            enabledTransports: ['ws']
         });
 
         window.Echo.channel('messages')
