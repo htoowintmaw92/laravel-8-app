@@ -30,7 +30,7 @@
         window.Echo = new Echo({
             broadcaster: 'pusher',
             key: "{{ config('broadcasting.connections.pusher.key') }}",
-            // cluster: 'mt1', // required by Echo even for local
+            cluster: 'eu', // required by Echo even for local
             // wsHost: window.location.hostname,
             wsHost: "{{ config('broadcasting.connections.pusher.options.host', request()->getHost()) }}",
             wsPort: "{{ config('broadcasting.connections.pusher.options.port', 6001) }}",
