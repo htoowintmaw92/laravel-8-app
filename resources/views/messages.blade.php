@@ -34,8 +34,7 @@
             // wsHost: window.location.hostname,
             wsHost: "{{ config('broadcasting.connections.pusher.options.host', request()->getHost()) }}",
             wsPort: 6001,
-            wssPort: "{{ config('broadcasting.connections.pusher.options.port', 6001) }}",
-            forceTLS: true,
+            forceTLS: false,
             disableStats: true,
             enabledTransports: ['ws']
         });
